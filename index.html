@@ -4,33 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Web-kibernetic</title>
   </head>
   <body>
     <div class="container">
       <section class="hero">
-        <div>
+        <div class="hero__wrapper">
           <h1 class="hero__title">Демо-версия</h1>
           <p class="hero__descr">
             За 18 лет деятельности было реализовано более 500 крупных, а так же,
             не менее 2500 средних и малых проектов. Используя знания и
             накопленный опыт мы можем предложить
           </p>
-          <button>Попробовать бесплатно</button>
+          <button class="hero__btn">
+            Попробовать бесплатно
+            <img
+              class="hero__arrow"
+              src="./assets/png/arrow-up-right.png"
+              alt="icon-arrow"
+            />
+          </button>
         </div>
-        <div></div>
+        <div class="hero__box"></div>
       </section>
     </div>
     <div class="modal">
-      <button></button>
-      <form>
-        <span>Войти в систему</span>
-        <label><input type="text" placeholder="Email/Телефон" /></label>
-        <label><input type="text" placeholder="Пароль" /></label>
-        <label><input type="checkbox" /> Запомнить пароль</label>
-        <button>Восстановить</button>
-        <button>Войти</button>
-        <button>Зарегестрироваться</button>
+      <button class="modal__btn">
+        <img src="./assets/png/cross.png" alt="icon-cross" />
+      </button>
+      <form class="form">
+        <h3 class="form__title">Войти в систему</h3>
+        <label class="form__label form__label-first"
+          ><input type="text" placeholder="Email/Телефон"
+        /></label>
+        <label class="form__label"
+          ><input type="text" placeholder="Пароль"
+        /></label>
+        <label class="form__label-check"
+          ><input type="checkbox" /> <span></span> Запомнить пароль</label
+        >
+        <button class="form__restore">Восстановить</button>
+        <button class="form__enter">Войти</button>
+        <button class="form__reg">Зарегестрироваться</button>
       </form>
     </div>
   </body>
