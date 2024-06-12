@@ -98,6 +98,11 @@ input {
   background: inherit;
 }
 
+dialog {
+  padding: 0;
+  border: none;
+}
+
 .container {
   padding: 36px 40px;
 }
